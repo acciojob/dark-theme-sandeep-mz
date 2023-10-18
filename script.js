@@ -1,21 +1,16 @@
-// JavaScript to toggle the dark theme
-
-// Function to toggle the theme when the button is clicked
 function swapTheme() {
-  const mainElement = document.querySelector('#app');
-  const buttonElement = document.querySelector('#swap');
+    const appDiv = document.getElementById('app');
+    const swapButton = document.getElementById('swap');
 
-  if (mainElement.classList.contains('night')) {
-    mainElement.classList.remove('night');
-    buttonElement.classList.remove('button_night');
-    buttonElement.textContent = 'Dark';
-  } else {
-    mainElement.classList.add('night');
-    buttonElement.classList.add('button_night');
-    buttonElement.textContent = 'Light';
-  }
+    if (appDiv.classList.contains('day')) {
+        appDiv.classList.remove('day');
+        appDiv.classList.add('night');
+        swapButton.classList.remove('button_day');
+        swapButton.classList.add('button_night');
+    } else {
+        appDiv.classList.remove('night');
+        appDiv.classList.add('day');
+        swapButton.classList.remove('button_night');
+        swapButton.classList.add('button_day');
+    }
 }
-
-// Add a click event listener to the button
-const buttonElement = document.querySelector('#swap');
-buttonElement.addEventListener('click', swapTheme);

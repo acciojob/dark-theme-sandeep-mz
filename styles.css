@@ -1,16 +1,19 @@
-#app{
-  height:90vh;
-}
-.night{
-  background-color: black;
-  color:white;
+.day {
+    background-color: #fff;
+    color: #000;
 }
 
-#swap{
-  outline:0;
+.night {
+    background-color: #000;
+    color: #fff;
 }
 
-.button_night{
-  background-color:blue;
-  color:white; 
+.button_day {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button_night {
+    background-color: #fff;
+    color: #000;
 }
